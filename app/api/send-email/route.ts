@@ -1,11 +1,10 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+import { NextRequest, NextResponse } from "next/server";
 import { EmailTemplate } from "@/app/components/email-template";
 import { Resend } from "resend";
 
-
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function POST(req: { json: () => any; }) {
+export async function POST(req: NextRequest) {
   const body = await req.json();
 
   try {
@@ -16,8 +15,8 @@ export async function POST(req: { json: () => any; }) {
       react: EmailTemplate({ body }),
     });
 
-    return Response.json(data);
+    return NextResponse.json(data);
   } catch (error) {
-    return Response.json({ error });
+    return NextResponse.json({ error });
   }
 }
