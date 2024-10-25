@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import { IProductColor, IProductSubCat } from '../interfaces';
+import { IProductColor } from '../interfaces';
 import ButtonIcon from './ui/ButtonIcon';
 import { FaPlus } from 'react-icons/fa';
 import { LuPencil, LuTrash2 } from 'react-icons/lu';

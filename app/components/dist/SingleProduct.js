@@ -44,7 +44,6 @@ var __spreadArrays = (this && this.__spreadArrays) || function () {
     return r;
 };
 exports.__esModule = true;
-// import ButtonIcon from "@/app/components/ui/ButtonIconIcon";
 var image_1 = require("next/image");
 var react_1 = require("react");
 var md_1 = require("react-icons/md");

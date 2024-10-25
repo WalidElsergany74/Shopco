@@ -1,4 +1,4 @@
-// app/products/[id]/page.tsx
+
 "use client"
 import React, {  useState } from 'react'
 import Input from '@/app/components/ui/Input'

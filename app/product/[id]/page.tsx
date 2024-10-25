@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: IProps) {
     openGraph: {
       title: product?.title,
       description: product?.desc,
-      url: `https://yourwebsite.com/product/${params.id}`,
+     
       images: [
         {
           url: product?.img1?.url,

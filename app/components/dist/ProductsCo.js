@@ -1,4 +1,3 @@
-// app/products/[id]/page.tsx
 "use client";
 "use strict";
 var __spreadArrays = (this && this.__spreadArrays) || function () {

@@ -1,6 +1,4 @@
 import React from 'react'
-import ButtonIcon from './ui/ButtonIcon'
-import {  MdOutlineEmail } from 'react-icons/md'
 import Link from 'next/link'
 import { FaFacebook, FaGithub, FaInstagram, FaTwitter } from 'react-icons/fa'
 import Image from 'next/image'
@@ -15,38 +13,7 @@ const Footer = () => {
 
 <footer className="bg-[#F0F0F0] ">
   <div className="mx-auto relative max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-    {/* <div
-      className="flex  w-[340px] md:w-[95%]   xl:w-full py-10   absolute -top-[350px] md:-top-40 left-1/2 -translate-x-1/2  rounded-3xl flex-col items-center gap-4  bg-black p-6 shadow-lg md:flex-row justify-center md:space-x-8"
-    >
-      <h3 className="text-4xl md:text-5xl flex-1 font-bold text-white  "> STAY UP TO DATE ABOUT OUR LATEST OFFERS </h3>
-
-
-
-<div className='flex-1'>
-<div className="relative flex flex-col items-center space-y-5 ">
-  <label htmlFor="UserEmail" className="sr-only"> Email </label>
-
- <div className='relative w-full'>
- <input
-    type="email"
-    id="UserEmail"
-    placeholder="Enter your email address"
-    className="w-full outline-none   pe-10 py-4 px-6 rounded-full shadow-sm text-sm"
-  />
-
-  <ButtonIcon
-    className="pointer-events-none absolute top-1/2 translate-y-[-50%] end-0 grid w-10 place-content-center text-gray-500"
-  >
-    <MdOutlineEmail size={18}/>
-  </ButtonIcon>
- </div>
-   <ButtonIcon className='py-4 px-6 w-full hover:bg-blue-500 hover:text-white transition-colors duration-300 bg-white text-black rounded-full font-medium text-base '>
-   Subscribe to Newsletter
-   </ButtonIcon>
-
-</div>
-</div>
-    </div> */}
+  
 
     <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
       <div className="text-center sm:text-left">

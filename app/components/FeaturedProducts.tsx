@@ -10,8 +10,7 @@ import "swiper/css/navigation";
 import Drawer from "./Drawer";
 
 import {  ProductDataResponse } from "../interfaces";
-import { useDispatch } from "react-redux";
-import { addToCart } from "../lib/featured/cart/cartSlice";
+
 
 const FeaturedProducts = ({ type , data }: { type: string  , data : ProductDataResponse}) => {
   const [reverse, setReverse] = useState(false); 

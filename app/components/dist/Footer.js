@@ -3,6 +3,7 @@ exports.__esModule = true;
 var react_1 = require("react");
 var link_1 = require("next/link");
 var fa_1 = require("react-icons/fa");
+var image_1 = require("next/image");
 var Badge1_png_1 = require("@/app/public/Badge1.png");
 var Badge2_png_1 = require("@/app/public/Badge2.png");
 var Badge3_png_1 = require("@/app/public/Badge3.png");
@@ -62,10 +63,10 @@ var Footer = function () {
                 react_1["default"].createElement("div", { className: "mt-16 sm:flex sm:items-center sm:justify-between " },
                     react_1["default"].createElement("span", { className: 'text-gray-500' }, "ShopCo. \u00A9 2000-2025, All rights reserved"),
                     react_1["default"].createElement("div", { className: "flex justify-center items-center mt-6 md:mt-0" },
-                        react_1["default"].createElement("img", { src: Badge1_png_1["default"], alt: "image.." }),
-                        react_1["default"].createElement("img", { src: Badge2_png_1["default"], alt: "image.." }),
-                        react_1["default"].createElement("img", { src: Badge5_png_1["default"], alt: "image.." }),
-                        react_1["default"].createElement("img", { src: Badge3_png_1["default"], alt: "image.." }),
-                        react_1["default"].createElement("img", { src: Badge4_png_1["default"], alt: "image.." })))))));
+                        react_1["default"].createElement(image_1["default"], { width: 50, height: 50, src: Badge1_png_1["default"], alt: "image.." }),
+                        react_1["default"].createElement(image_1["default"], { width: 50, height: 50, src: Badge2_png_1["default"], alt: "image.." }),
+                        react_1["default"].createElement(image_1["default"], { width: 50, height: 50, src: Badge5_png_1["default"], alt: "image.." }),
+                        react_1["default"].createElement(image_1["default"], { width: 50, height: 50, src: Badge3_png_1["default"], alt: "image.." }),
+                        react_1["default"].createElement(image_1["default"], { width: 50, height: 50, src: Badge4_png_1["default"], alt: "image.." })))))));
 };
 exports["default"] = Footer;

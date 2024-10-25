@@ -1,7 +1,7 @@
 "use client";
-// import Image from 'next/image';
+
 import React, { useState } from 'react';
-import { FaStar } from "react-icons/fa";
+
 import { MdOutlineShoppingBag } from "react-icons/md";
 import ButtonIcon from './ButtonIcon';
 import Link from 'next/link';
@@ -14,7 +14,7 @@ import { useAuth } from '@clerk/nextjs';
 import useSWR from 'swr';
 import toast from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
-// import { useRouter } from 'next/router';
+
 
 
 
@@ -154,110 +154,7 @@ const Card = ({   item, toggleDrawer, showSizes, toggleShowSizes  } : ICardProps
     };
     
    
-      // const handleAddToCart = async (size: string) => {
 
-      //   if (!userId) {
-      //       toast.error('You must sign-in to add products to cart', {
-      //           duration: 4000,
-      //           position: 'top-center',
-                
-      //       });
-      //       router.push('/sign-in'); // توجيه المستخدم إلى صفحة تسجيل الدخول
-      //       return;
-      //   }
-
-
-      //   setSelectedSize(size);
-      //   const quantity = 1;
-      //   const totalItemPrice = item.price * quantity;
-      
-      //   const cartData = {
-      //     productId: item.documentId,
-      //     size,
-      //     quantity,
-      //     price : item.price,
-      //     totalItem: totalItemPrice,
-      //     name: item.title,
-      //     image: `http://localhost:1337${item?.img1?.url}`
-      //   };
-      
-      //   try {
-      //     let updatedCart;
-      
-      //     // إذا لم يكن لدى المستخدم سلة، نقوم بإنشاء سلة جديدة
-      //     if (!existingCart) {
-           
-
-      //       const newCartResponse = await axios.post(`http://localhost:1337/api/carts`, {
-      //         data: {
-      //           userId: userId,
-      //           cart_items: []
-      //         }
-      //       });
-            
-      //       updatedCart = newCartResponse.data.data;
-      //     } else {
-      //       updatedCart = existingCart;
-      //     }
-      
-      //     const existingCartItems = updatedCart?.cart_items || [];
-          
-      //     // التحقق مما إذا كان المنتج بالحجم المحدد موجود بالفعل في السلة
-      //     const existingItem = existingCartItems.find((cartItem: ICartItem) =>
-      //       cartItem.productId === item.documentId && cartItem.size === size
-      //     );
-
-      //     if (existingItem) {
-      //       // التحقق مما إذا كانت الكمية المتاحة كافية
-      //       if (existingItem.quantity + 1  > item.stock) {
-      //         toast.error(`Quantity exceeds available stock.`, {
-      //           duration: 4000,
-      //           position: 'top-center',
-      //       });
-      //           return;
-      //       }
-    
-      //       // تحديث الكمية إذا كان العنصر موجود
-      //       const newQuantity = existingItem.quantity + 1;
-      //       const updatedTotalItemPrice = item.price * newQuantity;
-      
-      //       // documentId تحديث عنصر السلة الحالي في Strapi باستخدام
-      //       await axios.put(`http://localhost:1337/api/cart-items/${existingItem.documentId}`, {
-      //         data: {
-      //           quantity: newQuantity,
-      //           totalItem: updatedTotalItemPrice,
-      //           productId: item.documentId,
-      //           size,
-      //           name: existingItem.name,
-      //           image: existingItem.image, 
-      //           price : existingItem.price
-      //         }
-      //       });
-      //     } else {
-      //       // إضافة عنصر جديد إلى السلة
-      //       const addResponse = await axios.post("http://localhost:1337/api/cart-items", { data: cartData });
-      
-      //       // دمج العنصر الجديد مع العناصر الموجودة في السلة
-      //       const updatedCartItems = [...existingCartItems, addResponse.data.data];
-      
-      //       // documentId تحديث السلة بدمج العناصر القديمة والجديدة باستخدام
-      //       await axios.put(`http://localhost:1337/api/carts/${updatedCart.documentId}`, {
-      //         data: {
-      //           cart_items: updatedCartItems.map(item => item.documentId)
-      //         }
-      //       });
-      //     }
-      
-      //     // تحديث بيانات السلة باستخدام SWR mutate
-      //     mutate();
-      
-      //   } catch (error) {
-      //     console.error(error);
-      //   }
-      
-      //   toggleShowSizes();
-      //   toggleDrawer();
-      // };
       
 
    

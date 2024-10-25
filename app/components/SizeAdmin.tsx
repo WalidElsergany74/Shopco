@@ -1,13 +1,10 @@
 "use client";
 import React, { useState } from 'react';
-import { IProductColor, IProductSize, IProductSubCat } from '../interfaces';
+import {  IProductSize } from '../interfaces';
 import ButtonIcon from './ui/ButtonIcon';
 import { FaPlus } from 'react-icons/fa';
 import { LuPencil, LuTrash2 } from 'react-icons/lu';
 import useDialog from './UseDialog';
-import EditColor from './EditColor';
-import DeleteColor from './DeleteColor';
-import AddColor from './AddColor';
 import AddSize from './AddSize';
 import EditSize from './EditSize';
 import DeleteSize from './DeleteSize';
